@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<launch>
+
+<node name="emitter1" pkg="wifi" type="emitter" respawn="true" args="-i wlan4 -e 1 -R 6 -f 2437">
+</node>
+
+<node name="emitter2" pkg="wifi" type="emitter" respawn="true" args="-i wlan0 -e 0 -R 6 -f 2437">
+</node>
+
+</launch>
+

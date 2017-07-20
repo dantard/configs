@@ -1,0 +1,25 @@
+style: 0
+rate: 50
+delay: 1.0
+rosbag: true
+topics:
+ - topic: /out/wifi/0
+   fields:
+   - field: /rssi
+   - field: /channel
+ - topic: /out/wifi/1
+   fields:
+   - field: /rssi
+   - field: /channel
+ - topic: /rfexplorer2/rfexplorer/out/data
+   fields:
+   - field: /rssi
+   - field: /peak_frequency 
+   - field: /lower_freq_mhz 
+   - field: /upper_freq_mhz
+ - topic: /rfexplorer1/rfexplorer/out/data
+   fields:
+   - field: /rssi
+   - field: /peak_frequency 
+   - field: /lower_freq_mhz
+   - field: /upper_freq_mhz

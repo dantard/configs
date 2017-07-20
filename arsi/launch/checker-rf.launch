@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<launch>
+
+<node name="checker" pkg="checker" type="checker2" args="-f $(find arsi)/config/checker-rf.yaml" output="screen">
+</node>	
+
+</launch>

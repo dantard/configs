@@ -1,0 +1,16 @@
+delay: 5500
+#rate_mbps: 6.0
+queue: 50
+device: wlan2
+nodes:
+ - id: 3
+   mac: f8:1a:67:1a:83:d4
+ - id: 2
+   mac: 00:c0:ca:83:3e:c0
+ - id: 1
+   mac: 00:c0:ca:32:c2:9e
+ - id: 0
+   mac: 00:c0:ca:8f:29:98
+use_ip: true
+feedback: false
+quiet: false

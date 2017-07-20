@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<launch>
+
+<node name="ros_pound_node_1" pkg="ros_pound" type="ros-pound" respawn="true" args="--node-id 1 --num-of-nodes 4 --config-file $(find arsi)/config/ros-pound-node-1.yaml">
+</node>
+
+</launch>
+

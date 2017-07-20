@@ -1,0 +1,13 @@
+style: 0
+rate: 50
+delay: 1.0
+rosbag: false
+topics:
+ - topic: /R1/rx/R0/rtabmap/odom
+ - topic: /R1/rx/R0/mavros/local_position/pose
+ - topic: /R1/rx/R0/mavtest/local_plan
+ - topic: /R1/rx/R0/net/image/theora
+ - topic: /R1/rx/R0/mavros/state
+ - topic: /R1/rx/R0/mavros/battery
+ - topic: /R1/rx/R0/mavros/setpoint_velocity/cmd_vel
+ - topic: /R1/rx/R0/scan/shaped
