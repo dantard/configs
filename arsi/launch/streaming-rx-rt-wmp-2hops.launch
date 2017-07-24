@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<launch>
-
-<node name="ros_rt_wmp_node_1" pkg="ros_rt_wmp" type="ros-rt-wmp" respawn="true" args="--node-id 1 --num-nodes 3 --auto-namespace">
-</node>
-
-</launch>
-
