@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <launch>
+<arg name="bagname" default="arsi" />
 
 <node name="rfexplorer1" pkg="wifi" type="rfexplorer" respawn="true" ns="rfexplorer1">
 	<param name="port" value="/dev/ttyUSB0"/>
@@ -20,7 +21,7 @@
 	<param name="one_topic_per_sender" value="true"/>
 </node>
 
-<node name="rosbag" pkg="rosbag" type="record" args="-a" respawn="true">                          
+<node name="rosbag" pkg="rosbag" type="record" args="-a -o $(arg bagname)" respawn="true">                          
 </node>
 
 </launch>
