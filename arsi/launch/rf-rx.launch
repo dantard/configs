@@ -10,13 +10,13 @@
 
 <node name="rfexplorer2" pkg="wifi" type="rfexplorer" respawn="true" ns="rfexplorer2">
 	<param name="port" value="/dev/ttyUSB1"/>
-	<param name="lower_freq_MHz" value="420"/>
-	<param name="upper_freq_MHz" value="430"/>
+	<param name="lower_freq_MHz" value="858"/>
+	<param name="upper_freq_MHz" value="878"/>
 </node>	
 
 <node name="wifi" pkg="wifi" type="receiver" respawn="true">
         <param name="freq" value="2437"/>
-	<param name="interface" value="wlan3"/>
+	<param name="interface" value="wlan10"/>
 	<param name="one_topic_per_sender" value="true"/>
 </node>
 
