@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<launch>
+
+<node name="ros_pound_node_0" pkg="ros_pound" type="ros-pound" respawn="true" args="--node-id 0 --num-of-nodes 4 --config-file $(find arsi)/config/streaming/3hops/ros-pound-node-0.yaml">
+</node>
+
+<node name="image_proc" pkg="image_proc" type="image_proc" respawn="true" args="image_raw:=/rgb/image_drop">
+</node>
+
+<node name="drop" pkg="topic_tools" type="drop" respawn="true" args="/rgb/image 2 3">
+</node>
+
+<node name="republish" pkg="image_transport" type="republish" respawn="true" args="raw in:=/image_mono theora out:=/net/image">
+</node>	
+
+<node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(find arsi)/bag/arsi.bag -l -q"/>
+
+<node name="laser_shaper" pkg="laser_shaper" type="laser_shaper" respawn="true">
+<remap from="/scan" to="/hokuyo/scan"/>
+<param name="period" value="250"/>
+<param name="remove_intensity" value="true"/> 
+<param name="decimation" value="4"/> 
+<param name="angle_min" value="-90"/> 
+<param name="angle_max" value="90"/> 
+</node>
+
+
+</launch>
+
