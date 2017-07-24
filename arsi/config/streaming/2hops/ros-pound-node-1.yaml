@@ -9,7 +9,7 @@ nodes:
  - id: 0
    mac: 00:c0:ca:95:4a:ea
 routes:
- - id: 0
+ - dest: 0
    next: 2
 use_ip: false
 feedback: false

@@ -1,6 +1,6 @@
 delay: 5500
 queue: 50
-device: wlanXX
+device: wlan5
 nodes:
  - id: 2
    mac: 00:c0:ca:83:3e:c0
@@ -9,7 +9,7 @@ nodes:
  - id: 0
    mac: 00:c0:ca:95:4a:ea
 routes:
- - id: 1
+ - dest: 1
    next: 2
 
 use_ip: false
