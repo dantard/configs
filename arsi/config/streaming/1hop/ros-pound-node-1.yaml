@@ -11,6 +11,3 @@ nodes:
 use_ip: false
 feedback: false
 quiet: false
-# 1 cuad -> dron
-# 2 cuad -> BS
-# 3 cuad -> RPi

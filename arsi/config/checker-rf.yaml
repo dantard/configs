@@ -7,10 +7,12 @@ topics:
    fields:
    - field: /rssi
    - field: /channel
+   - field: /len
  - topic: /out/wifi/1
    fields:
    - field: /rssi
    - field: /channel
+   - field: /len
  - topic: /rfexplorer2/rfexplorer/out/data
    fields:
    - field: /rssi
