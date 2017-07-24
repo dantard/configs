@@ -1,13 +1,16 @@
 delay: 2500
 queue: 50
-device: wlan2
+device: wlan10
 nodes:
  - id: 2
    mac: 00:c0:ca:83:3e:c0
  - id: 1
    mac: 00:c0:ca:95:4a:eb
  - id: 0
-   mac: 00:16:eb:c3:84:b7
+   mac: 00:c0:ca:95:4a:ea
+routes:
+ - dest: 0
+   next: 2
 use_ip: false
 feedback: false
 quiet: false

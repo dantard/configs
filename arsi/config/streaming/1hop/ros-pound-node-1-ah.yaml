@@ -7,7 +7,10 @@ nodes:
  - id: 1
    mac: 00:c0:ca:95:4a:eb
  - id: 0
-   mac: 00:16:eb:c3:84:b7
+   mac: 00:c0:ca:95:4a:ea
 use_ip: false
 feedback: false
 quiet: false
+# 1 cuad -> dron
+# 2 cuad -> BS
+# 3 cuad -> RPi

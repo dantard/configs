@@ -2,7 +2,7 @@
 
 <launch>
 
-<node name="emitter1" pkg="wifi" type="emitter" respawn="true" args="-i wlan1 -e 1 -R 6 -f 2437">
+<node name="emitter1" pkg="wifi" type="emitter" respawn="true" args="-i wlan1 -e 1 -R 6 -f 2412">
 </node>
 
 <node name="emitter2" pkg="wifi" type="emitter" respawn="true" args="-i wlan2 -e 0 -R 6 -f 2437">

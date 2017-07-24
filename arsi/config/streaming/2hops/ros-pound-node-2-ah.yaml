@@ -1,4 +1,4 @@
-delay: 5500
+delay: 2500
 queue: 50
 device: wlan1
 nodes:
@@ -7,11 +7,7 @@ nodes:
  - id: 1
    mac: 00:c0:ca:95:4a:eb
  - id: 0
-   mac: 00:16:eb:c3:84:b7
-routes:
- - dest: 1
-   next: 2
-
+   mac: 00:c0:ca:95:4a:ea
 use_ip: false
 feedback: false
 quiet: false
